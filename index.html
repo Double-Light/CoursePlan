@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - CSS-Grid Gantt Chart</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"><link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:100,400,700'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div class="header">
+    <h1>2022年教育訓練課程規劃</h1>
+    <p></p>
+  </div>
+  <hr/>
+  <div class="gantt">
+    <div class="gantt__row gantt__row--months" style="">
+      <div class="gantt__row-first">
+		<div class="gantt__row-card">
+          <img src="./media/calendar.png" alt="calendar" style="padding: 0%;width: 100%;">
+        </div>
+      </div>
+      <span>1月</span><span>2月</span><span>3月</span>
+      <span>4月</span><span>5月</span><span>6月</span>
+      <span>7月</span><span>8月</span><span>9月</span>
+      <span>10月</span><span>11月</span><span>12月</span>
+    </div>
+    <div class="gantt__row gantt__row--lines" data-month="5">
+      <span></span><span></span><span></span>
+      <span></span><span></span><span></span>
+      <span></span><span></span><span></span>
+      <span></span><span></span><span></span>
+    </div>
+    <div class="gantt__row">
+      <div class="gantt__row-first" style="background-color: #5B9BD5;">
+        <div class="gantt__row-card">
+          <img src="./media/image1.png">
+          <span>年度訓練</span>
+        </div>
+      </div>
+      <div class="gantt__row-bars-align-middle">
+        <ul class="gantt__row-bars">
+          <li style="grid-column: 1/30; background-color: #5B9BD5;"><span>RGB課程</span></li>
+          <li style="grid-column: 61/150; background-color: #5B9BD5;"><span>Radar應用</span></li>
+          <li style="grid-column: 181/240; background-color: #5B9BD5;"><span>雷雨個案</span></li>
+          <li style="grid-column: 271/330; background-color: #5B9BD5;"><span>鋒面&秋颱個案</span></li>
+          <li style="grid-column: 61/150; background-color: #5B9BD5;"><span>颮線個案</span></li>
+          <li style="grid-column: 181/240; background-color: #5B9BD5;"><span>NSHARP探空</span></li>
+          <li style="grid-column: 271/330; background-color: #5B9BD5;"><span>定量降水預報訓練</span></li>
+          <li style="grid-column: 61/150; background-color: #5B9BD5;"><span>天診課程</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="gantt__row">
+      <div class="gantt__row-first" style="background-color: #41DAEF;">
+        <div class="gantt__row-card">
+          <img src="./media/image2.png">
+        <span>季前訓練</span>
+        </div>
+      </div>
+      <div class="gantt__row-bars-align-middle">
+        <ul class="gantt__row-bars">
+          <li style="grid-column: 91/150; background-color: #41DAEF;"><span>梅雨</span></li>
+          <li style="grid-column: 151/210; background-color: #41DAEF;"><span>颱風</span></li>
+          <li style="grid-column: 301/360; background-color: #41DAEF;"><span>寒潮個案</span></li>
+          <li style="grid-column: 91/150; background-color: #41DAEF;"><span>極端高溫</span></li>
+          <li style="grid-column: 301/360; background-color: #41DAEF;"><span>低溫特報</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="gantt__row">
+      <div class="gantt__row-first" style="background-color: #FFC000;">
+        <div class="gantt__row-card">
+          <img src="./media/image3.png">
+          <span>新人訓練</span>
+        </div>
+      </div>
+      <div class="gantt__row-bars-align-middle">
+        <ul class="gantt__row-bars">
+          <li style="grid-column: 301/360; background-color: #FFC000;"><span>新人訓練</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="gantt__row gantt__row--empty">
+      <div class="gantt__row-first" style="background-color: #6E6E62;">
+        <div class="gantt__row-card">
+          <img src="./media/image4.svg" style="filter: invert(100%) sepia(0%) saturate(4064%) hue-rotate(302deg) brightness(104%) contrast(98%);">
+          <span>預報決策</span>
+        </div>
+      </div>
+      <div class="gantt__row-bars-align-middle">
+        <ul class="gantt__row-bars"></ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
